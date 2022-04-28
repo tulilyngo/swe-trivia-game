@@ -29,7 +29,7 @@ public class GameClient extends AbstractClient {
     boolean start = true;
 
     public GameClient(JPanel container, CardLayout cardLayout) {
-        super("localhost",8300);
+        super("192.168.10.108",8300);
         this.container = container;
         this.cardLayout = cardLayout;
     }

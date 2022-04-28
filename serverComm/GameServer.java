@@ -51,8 +51,6 @@ public class GameServer extends AbstractServer {
     public void handleMessageFromClient(Object arg0, ConnectionToClient arg1) {
         // If client sends log in info to server, check username and password
         if (arg0 instanceof LoginData) {
-            log.append("Log In info from Client " + arg1.getId() + "\n");
-
             LoginData loginData = (LoginData) arg0;
             Player player = new Player(loginData.getUsername(), loginData.getPassword());
             try {
